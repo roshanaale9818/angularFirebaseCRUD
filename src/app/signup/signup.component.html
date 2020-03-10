@@ -1,0 +1,22 @@
+<div class="whole">
+    <div class="container">
+        <div class="form-whole">
+            <form>
+                <div class="form-group">
+                    <label for="email" class="labe">Email address</label>
+                    <input type="email" class="form-control" name="email" [(ngModel)]="email" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="password" class="labe">Password</label>
+                    <input type="password" class="form-control" name="password" [(ngModel)]="password" placeholder="Password">
+                </div>
+                <!-- <div class="successfull bg-success" *ngIf=" isSuccessful">
+                    <h1> Successfully signed up !!!</h1>
+                </div> -->
+                <button type="submit" class="btn btn-primary btn-block" (click)="signUp()">Sign Up</button>
+                <button class="btn btn-back btn-block" (click)="goBack()">Back</button>
+
+            </form>
+        </div>
+    </div>
+</div>

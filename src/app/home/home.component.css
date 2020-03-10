@@ -1,0 +1,49 @@
+.card-top {
+    width: 20rem;
+    margin: 10px 0 0 0px;
+}
+
+.logout {
+    background: #FF0000;
+    border: none;
+}
+
+.logout:hover {
+    transition: 0.4s;
+    opacity: 0.8;
+    background: #B22222;
+}
+
+.deleteuser {
+    margin-left: 10px;
+}
+
+.updateuser {
+    margin-top: 5px;
+}
+
+.navbar-top {
+    background: #0077b3;
+}
+
+.navbar-top h1 {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.userinput,
+.user-detail {
+    margin-top: 25px;
+}
+
+@media only screen and (max-width: 992px) {
+    .deleteuser {
+        margin-left: 0px;
+    }
+}
+
+
+/* .UserData {
+    margin-left: 5px;
+} */

@@ -1,0 +1,89 @@
+@media only screen and (max-width: 600px) {
+    .form-whole {
+        width: 100%;
+        background: #17202A;
+        padding: 25px;
+        border-radius: 15px;
+        position: absolute;
+        top: 0% !important;
+        left: 0% !important;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .form-whole {
+        width: 100% !important;
+        background: #17202A;
+        padding: 25px;
+        border-radius: 0px !important;
+        position: absolute;
+        top: 0% !important;
+        left: 0% !important;
+    }
+}
+
+.whole {
+    height: 100vh;
+    background: #1A5276;
+    position: relative;
+}
+
+.login-head {
+    /* background-color: darkgrey; */
+    color: white;
+    font-weight: 600;
+}
+
+.form-whole {
+    width: 340px;
+    background: #17202A;
+    padding: 25px;
+    border-radius: 15px;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+}
+
+.labe {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+.submit-btn,
+.sign-in {
+    padding: 4px;
+    font-size: 18px;
+}
+
+.sign-in-btn {
+    color: white;
+    background: #1D8348;
+}
+
+.form-group {
+    margin-top: 1rem;
+}
+
+.sml {
+    color: white;
+}
+
+.sml a:hover {
+    text-decoration: none;
+    border: none;
+}
+
+.goog {
+    margin-right: 5px;
+}
+
+.google-signin {
+    background: #DB4437;
+    border-color: none;
+    color: white;
+}
+
+.google-signin:hover {
+    opacity: 0.9;
+}

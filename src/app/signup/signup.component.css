@@ -1,0 +1,28 @@
+.whole {
+    background: #1A5276;
+    height: 100vh;
+}
+
+.form-whole {
+    background: darkslategrey;
+    padding: 20px;
+}
+
+.labe {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+.btn-back {
+    color: white;
+    background: #1D8348;
+}
+
+.btn-back:hover {
+    opacity: 0.9;
+}
+
+.successfull h1 {
+    color: white;
+}

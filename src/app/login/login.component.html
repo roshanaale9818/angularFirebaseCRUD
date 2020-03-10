@@ -1,0 +1,37 @@
+
+<div class="whole">
+    <div class="container">
+        <div class="row">
+            <div class="form-whole col-xs-12">
+                <h2 class="text-center login-head">Login</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="email" class="labe">Email</label>
+                        <input type="email" #emailValid="ngModel" [ngClass]="{'is-invalid':emailValid.errors && emailValid.touched}" [(ngModel)]="email" name="email" class="form-control" placeholder="abc@xyz.com" required>
+                        <div [hidden]="!emailValid.errors?.required" class="invalid-feedback">
+                            Email required
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="labe">Password</label>
+                        <input type="password" #passwordValid="ngModel" [ngClass]="{'is-invalid':passwordValid.errors && passwordValid.touched}" [(ngModel)]="password" name="password" class="form-control" placeholder="password" required minlength="6">
+                        <div [hidden]="!passwordValid.errors?.required" class="invalid-feedback">
+                            Pasword required
+                        </div>
+                    </div>
+                    <button class="btn sign-in-btn btn-block submit-btn" [disabled]="!this.email||!this.password" (click)="signIn()">Sign-in</button>
+                    <button class="btn  btn-block submit-btn google-signin" (click)="googleSignIn()"><i class="fa fa-google goog"></i>Sign-in with Google</button>
+                    <small class="sml">Have no account?  <a [routerLink]="['/signup']" routerLinkActive="router-link-active">Create a account</a></small>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="my-container">
+    <ng-template #customLoadingTemplate>
+
+    </ng-template>
+
+    <ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '3px' }" [template]="customLoadingTemplate"></ngx-loading>
+</div>
